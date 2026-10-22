@@ -2,7 +2,7 @@ package tema4;
 
 import java.util.Scanner;
 
-public class T04T09HoroscopoIfAnidados {
+public class T04E09HoroscopoIfAnidados {
     public static void main(String[] args) {
         // variables
         int dia, mes;
