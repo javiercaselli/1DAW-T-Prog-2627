@@ -12,6 +12,8 @@ public class T04E18NumerosCapicuaConStringBuilder {
 
         if (numero < 0 || numero >= 100000) {
             System.out.println("ERROR: El número debe ser positivo y tener como mucho 5 cifras");
+            sc.close();
+            return;
         }
 
         String sNumero = String.valueOf(numero);    // Obtengo una cadena de caracteres con el número
