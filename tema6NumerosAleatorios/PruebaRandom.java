@@ -1,4 +1,4 @@
-package tema6;
+package tema6NumerosAleatorios;
 
 import java.util.Random;
 
@@ -11,6 +11,8 @@ public class PruebaRandom {
 
         // Forma moderna con librería Random
         Random random = new Random();
-        for (int i = 1; i < 11; i++) { System.out.println(random.nextInt(1, 11)); }
+        for (int i = 1; i < 11; i++) { System.out.println(random.nextInt(1, 7)); }
+
+        for (int i = 1; i < 11; i++) { System.out.println(random.nextDouble(-15, 117)); }
     }
 }
