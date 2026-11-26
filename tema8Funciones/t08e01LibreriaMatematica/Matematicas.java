@@ -25,6 +25,19 @@ public class Matematicas {
         // valor retorno
         int numero = 0;
 
+        // Variables
+        int tamanio = arrayEnteros.length;
+
+        // A partir del contenido del array, saca el número invertido buscado
+        for (int digito : arrayEnteros) {
+            int multiplicador = 1;
+            for (int i = 0; i < tamanio - 1; i++) {
+                multiplicador *= 10;
+            }
+            tamanio--;
+            numero += digito * multiplicador;
+        }
+
         return numero;
     }
 
@@ -146,5 +159,8 @@ public class Matematicas {
         System.out.println(esCapicua(545646));
         System.out.println(esCapicua(23532));
         System.out.println(digitoN(563873, 4));
+
+        int[] numPrueba = {3, 6, 7, 5, 4, 0, 1, 0};
+        System.out.println(ArrayAEntero(numPrueba));
     }
 }
